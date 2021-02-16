@@ -6,12 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orinoco</title>
     <link rel="stylesheet" type="text/css" href="base.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   </head>
   <body>  
-    <div>
-        <button id="ask-teddy">Quelle est le nom du premier teddybear ?</button>
+    <div class="card" style="width: 18rem;">
+      <img id="imageURL" class="card-img-top" src="..." alt="Card image cap">
+      <div class="card-body">
+        <h5 id="title" class="card-title">title</h5>
+        <p id="description" class="card-text"></p>
+        <p id="price" class="card-text"></p>
+      </div>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Colors
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a id="colors1" class="dropdown-item" href="#">couleur1</a>
+          <a id="colors2" class="dropdown-item" href="#">couleur2</a>
+          <a id="colors3" class="dropdown-item" href="#">couleur3</a>
+        </div>
+      </div>
+      <div class="card-body">
+        <a href="#" class="card-link">Card link</a>
+      </div>
     </div>
-    <div id="teddy-result"></div>
     <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
+
